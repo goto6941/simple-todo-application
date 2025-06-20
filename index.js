@@ -39,14 +39,14 @@ function addTask(title) {
  * true     |   false
  * false    |   true
  */
-function onUpdateIsDone(task) {
-    console.log("チェックボックスがクリックされました。", task);
+function onUpdateIsDone(tasks) {
+    console.log("チェックボックスがクリックされました。", tasks);
 
     // 達成状態を更新(このままだと、現在の達成状態で更新されてしまう！)
     const currentValue = true;
-    task.isDone = currentValue;
+    tasks.isDone = currentValue;
 
-    return task;
+    return tasks;
 }
 
 /**
