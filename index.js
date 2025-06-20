@@ -40,7 +40,7 @@ function addTask(title) {
  * false    |   true
  */
 function onUpdateIsDone(tasks) {
-    console.log("チェックボックスがクリックされました。", tasks);
+    console.log("チェックボックスがクリックされました。", tasks.isDone);
 
     // 達成状態を更新(このままだと、現在の達成状態で更新されてしまう！)
     const currentValue = true;
